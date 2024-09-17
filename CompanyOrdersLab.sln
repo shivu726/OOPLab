@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyOrdersLab", "CompanyOrdersLab\CompanyOrdersLab.csproj", "{D35AEC68-ECF4-4FDF-B5C5-1B3C2741FF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingAppLab", "TrainingAppLab\TrainingAppLab.csproj", "{BDAF2051-6F8B-4B04-8FA5-E9E37F3C346B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35AEC68-ECF4-4FDF-B5C5-1B3C2741FF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35AEC68-ECF4-4FDF-B5C5-1B3C2741FF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35AEC68-ECF4-4FDF-B5C5-1B3C2741FF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35AEC68-ECF4-4FDF-B5C5-1B3C2741FF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDAF2051-6F8B-4B04-8FA5-E9E37F3C346B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDAF2051-6F8B-4B04-8FA5-E9E37F3C346B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDAF2051-6F8B-4B04-8FA5-E9E37F3C346B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDAF2051-6F8B-4B04-8FA5-E9E37F3C346B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {328481A2-DE89-4FE4-8574-C032A5718E53}
+	EndGlobalSection
+EndGlobal
