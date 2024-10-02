@@ -35,6 +35,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagement", "Produ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementApp", "ContactManagementApp\ContactManagementApp.csproj", "{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF_Lab", "EF_Lab", "{EC82F7F6-B1E6-4266-85AC-1DCE1D3835EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagementApp", "StudentManagementApp\StudentManagementApp.csproj", "{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,10 @@ Global
 		{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +100,7 @@ Global
 		{D8ECBF32-AFCE-45A9-BDF2-D47146DBABBA} = {805B8A89-820B-46DA-9F09-42E6961540D0}
 		{624F9538-0C67-4AB3-921B-53EA48A9BA29} = {9725BDBB-1100-4AD6-BEC7-038343E008F0}
 		{842FDE36-2227-4BDD-B7E9-C4CB220E52CE} = {9725BDBB-1100-4AD6-BEC7-038343E008F0}
+		{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F} = {EC82F7F6-B1E6-4266-85AC-1DCE1D3835EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {328481A2-DE89-4FE4-8574-C032A5718E53}
