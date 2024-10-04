@@ -8,21 +8,69 @@ namespace ProductsManagement
     {
         static void Main(string[] args)
         {
+            var dbContext = new ProductsDbContext();
+
+                                // This is eager loading..
+            var products = from prod in dbContext.Products.Include(c => c.Category) select prod;    
+
+            foreach (var product in products)
+            {
+                Console.WriteLine(product.Name + "\t" + product.Category.Name);
+            }
+
+            //CreateProductByCategory();
+
+            //NewProductAndCategory();
+
+            //DeleteProduct();
+            //EditAndUpdateProduct();
+            //GetAllProducts();
+            //AddProduct();
+
+        }
+
+        private static void CreateProductByCategory()
+        {
+            // New product with existing category..
+
+            var dbContext = new ProductsDbContext();
+
+            var category = dbContext.Categories.Find(1);
+
+            var product = new Product() { Name = "IPhone 16Max Pro", Brand = "Apple", Price = 99999, Category = category };
+
+            dbContext.Products.Add(product);
+
+            dbContext.SaveChanges();
+        }
+
+        private static void NewProductAndCategory()
+        {
+            ProductsDbContext context = new ProductsDbContext();
+
+            var category = new Category() { Name = "Mobile", Description = "Mobile Phones" };
+
+            var product = new Product() { Name = "IPhone 16", Brand = "Apple", Price = 89999, Category = category };
+
+            context.Products.Add(product);
+            context.Categories.Add(category);   // it will be optional...
+
+            context.SaveChanges();
+        }
+
+        private static void DeleteProduct()
+        {
             // Delete the product from database based on Id..
 
             ProductsDbContext dbContext = new ProductsDbContext();
             var deleteProd = dbContext.Products.Find(3);
 
-            if (deleteProd != null) { 
-                
+            if (deleteProd != null)
+            {
+
                 dbContext.Remove(deleteProd);
                 dbContext.SaveChanges();
             }
-
-            //EditAndUpdateProduct();
-            //GetAllProducts();
-            //AddProduct();
-
         }
 
         private static void EditAndUpdateProduct()

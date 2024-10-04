@@ -14,5 +14,9 @@ namespace ProductsManagement.Data
 
             // configure and map entities calss with tables
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }

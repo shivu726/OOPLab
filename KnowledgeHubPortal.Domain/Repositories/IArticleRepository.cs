@@ -9,14 +9,20 @@ namespace KnowledgeHubPortal.Domain.Repositories
 {
     public interface IArticleRepository
     {
-        void AddArticle(Article article);
+        //void AddArticle(Article article);
+        //List<Article> GetArticlesForSave(int categoryId);
+        //List<Article> GetArticlesForReview(int categoryId);
+        //void ApproveArticle(List<int> acticlesId);
+        //void RejectArticle(List<int> acticlesId);
 
-        List<Article> GetArticlesForSave(int categoryId);
+        Task AddArticleAsync(Article article);
 
-        List<Article> GetArticlesForReview(int categoryId);
+        Task<List<Article>> GetArticlesForSaveAsync(int categoryId);
 
-        void ApproveArticle(List<int> acticlesId);
+        Task<List<Article>> GetArticlesForReviewAsync(int categoryId);
 
-        void RejectArticle(List<int> acticlesId);
+        Task ApproveArticleAsync(List<int> acticlesId);
+
+        Task RejectArticleAsync(List<int> acticlesId);
     }
 }
