@@ -12,8 +12,8 @@ using StudentEnrollment.Data;
 namespace StudentEnrollment.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20241004072414_InitialStudent")]
-    partial class InitialStudent
+    [Migration("20241005013848_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

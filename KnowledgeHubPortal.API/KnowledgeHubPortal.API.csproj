@@ -7,11 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KnowledgeHubPortal.Data\KnowledgeHubPortal.Data.csproj" />
     <ProjectReference Include="..\KnowledgeHubPortal.Domain\KnowledgeHubPortal.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\FullStackDevelopment\2024\HarmanFullStackGit\OOPLab\KnowledgeHubPortal.API\Controllers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\FullStackDevelopment\2024\HarmanFullStackGit\OOPLab\KnowledgeHubPortal.API\Controllers\.editorconfig" />
   </ItemGroup>
 
 </Project>

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoolProductsAPIService.Migrations
 {
     [DbContext(typeof(ProductsDbContext))]
-    [Migration("20241004130252_AddedProducts")]
-    partial class AddedProducts
+    [Migration("20241005020200_ProductsAdded")]
+    partial class ProductsAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

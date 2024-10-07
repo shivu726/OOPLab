@@ -24,5 +24,7 @@ namespace KnowledgeHubPortal.Domain.Repositories
         Task ApproveArticleAsync(List<int> acticlesId);
 
         Task RejectArticleAsync(List<int> acticlesId);
+
+        Task<List<Article>> GetArticlesAsync();
     }
 }

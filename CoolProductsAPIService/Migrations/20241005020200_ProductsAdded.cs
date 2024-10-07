@@ -5,7 +5,7 @@
 namespace CoolProductsAPIService.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedProducts : Migration
+    public partial class ProductsAdded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

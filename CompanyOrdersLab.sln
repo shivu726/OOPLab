@@ -33,19 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF Demo", "EF Demo", "{9725
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagement", "ProductsManagement\ProductsManagement.csproj", "{624F9538-0C67-4AB3-921B-53EA48A9BA29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementApp", "ContactManagementApp\ContactManagementApp.csproj", "{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagementApp", "ContactManagementApp\ContactManagementApp.csproj", "{842FDE36-2227-4BDD-B7E9-C4CB220E52CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF_Lab", "EF_Lab", "{EC82F7F6-B1E6-4266-85AC-1DCE1D3835EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagementApp", "StudentManagementApp\StudentManagementApp.csproj", "{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagementApp", "StudentManagementApp\StudentManagementApp.csproj", "{E5E375F8-3E8C-43F4-88C3-A9CC6DF2851F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment", "StudentEnrollment\StudentEnrollment.csproj", "{69432EA8-C656-448F-8727-777BBE82B0F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentEnrollment", "StudentEnrollment\StudentEnrollment.csproj", "{69432EA8-C656-448F-8727-777BBE82B0F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirstDemoApp_Lab", "DbFirstDemoApp_Lab\DbFirstDemoApp_Lab.csproj", "{2E274D4F-04F9-42C2-9E6C-51309EF40842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbFirstDemoApp_Lab", "DbFirstDemoApp_Lab\DbFirstDemoApp_Lab.csproj", "{2E274D4F-04F9-42C2-9E6C-51309EF40842}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPIDemo", "WebAPIDemo", "{1CB4901F-CD0A-4780-9518-DE75F76FBCD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolProductsAPIService", "CoolProductsAPIService\CoolProductsAPIService.csproj", "{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoolProductsAPIService", "CoolProductsAPIService\CoolProductsAPIService.csproj", "{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolProductsAPIClient", "CoolProductsAPIClient\CoolProductsAPIClient.csproj", "{D567EC8C-F8A3-42BB-94FA-753A580E808F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D567EC8C-F8A3-42BB-94FA-753A580E808F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D567EC8C-F8A3-42BB-94FA-753A580E808F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D567EC8C-F8A3-42BB-94FA-753A580E808F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D567EC8C-F8A3-42BB-94FA-753A580E808F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +130,7 @@ Global
 		{69432EA8-C656-448F-8727-777BBE82B0F0} = {EC82F7F6-B1E6-4266-85AC-1DCE1D3835EC}
 		{2E274D4F-04F9-42C2-9E6C-51309EF40842} = {EC82F7F6-B1E6-4266-85AC-1DCE1D3835EC}
 		{B4F8ADE1-9CDA-435E-94D3-52F6213E02FD} = {1CB4901F-CD0A-4780-9518-DE75F76FBCD3}
+		{D567EC8C-F8A3-42BB-94FA-753A580E808F} = {1CB4901F-CD0A-4780-9518-DE75F76FBCD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {328481A2-DE89-4FE4-8574-C032A5718E53}

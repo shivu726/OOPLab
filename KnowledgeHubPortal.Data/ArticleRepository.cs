@@ -39,6 +39,11 @@ namespace KnowledgeHubPortal.Data
             await _context.BulkUpdateAsync(approveList);
         }
 
+        public async Task<List<Article>> GetArticlesAsync()
+        {
+            return await _context.Articles.ToListAsync();
+        }
+
         public async Task<List<Article>> GetArticlesForReviewAsync(int categoryId = 0)
         {
             List<Article> articles = null;

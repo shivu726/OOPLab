@@ -27,7 +27,7 @@ namespace KnowledgeHubPortal.Data
             {
                 // for configuring database from hardcoded connection string..
 
-                optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=KnowledgeHubPortalApp;Integrated Security=True;MultipleActiveResultSets=True").UseLazyLoadingProxies().LogTo(Console.WriteLine, LogLevel.Information);
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=KnowledgeHubPortalApp;Integrated Security=True;MultipleActiveResultSets=True").LogTo(Console.WriteLine, LogLevel.Information);
             }
         }
 

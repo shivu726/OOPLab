@@ -1,5 +1,7 @@
 
 using CoolProductsAPIService.Models.Data;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoolProductsAPIService
@@ -17,12 +19,21 @@ namespace CoolProductsAPIService
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddControllers();
+            builder.Services.AddAuthorization();
+
+            builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+                .AddEntityFrameworkStores<ProductsDbContext>();
+
+
+            builder.Services.AddControllers().AddNewtonsoftJson();
+            builder.Services.AddOData();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+            app.MapIdentityApi<IdentityUser>();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -31,10 +42,17 @@ namespace CoolProductsAPIService
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
 
+            app.UseHttpsRedirection();
+            app.UseRouting();
             app.UseAuthorization();
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.EnableDependencyInjection();
+                endpoints.Select().OrderBy().SkipToken().MaxTop(100).Filter().Count();
+                endpoints.MapControllers();
+            });
 
             app.MapControllers();
 

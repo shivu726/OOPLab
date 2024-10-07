@@ -1,4 +1,8 @@
 
+using KnowledgeHubPortal.Data;
+using KnowledgeHubPortal.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 namespace KnowledgeHubPortal.API
 {
     public class Program
@@ -8,6 +12,28 @@ namespace KnowledgeHubPortal.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            var AllowAllOrigins = "_AllowAllOrigins";
+
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: AllowAllOrigins,
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin();
+                                      builder.AllowAnyMethod();
+                                      builder.AllowAnyHeader();
+                                  });
+            });
+
+            builder.Services.AddDbContext<KnowledgeHubPortalDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).UseLazyLoadingProxies();
+            });
+
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+            builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -27,6 +53,7 @@ namespace KnowledgeHubPortal.API
 
             app.UseAuthorization();
 
+            app.UseCors(AllowAllOrigins);
 
             app.MapControllers();
 
